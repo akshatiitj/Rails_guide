@@ -1,7 +1,9 @@
 require 'test_helper'
 
-class ArticleTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+RSpec.describe Article do
+  it "returns comments for a comment:" do
+    article = Article.new
+    expect(article.has_many).to eq(0)
+  end
 end
+
